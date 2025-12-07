@@ -1,14 +1,15 @@
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import Footer from "@/components/Footer";
+import { Layout } from "@/components/layout/Layout";
+import { Hero } from "@/components/home/Hero";
+import { AISection } from "@/components/home/AISection";
+import { CTA } from "@/components/home/CTA";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
-      <Navbar />
+    <Layout>
       <Hero />
-      <Footer />
-    </div>
+      <AISection />
+      <CTA />
+    </Layout>
   );
 };
 
